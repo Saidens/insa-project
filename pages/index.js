@@ -14,10 +14,11 @@ import Link from "@material-ui/core/Link";
 import Container from "@material-ui/core/Container";
 import Header from "../components/Header/Header";
 import Button from "@material-ui/core/Button";
+import Footer from "../components/Footer/Footer";
 
 const useStyles = makeStyles((theme) => ({
-  root:{
-    backgroundColor: 'white',
+  root: {
+    backgroundColor: "white",
   },
 
   toolbar: {
@@ -54,9 +55,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   button: {
-    backgroundColor: "green",
+    backgroundColor: "#55cee0",
     marginBottom: theme.spacing(2),
-    marginLeft: theme.spacing(14),
+    marginLeft: theme.spacing(10),
     width: 250,
   },
   card: {
@@ -67,6 +68,10 @@ const useStyles = makeStyles((theme) => ({
   },
   cardMedia: {
     width: 160,
+  },
+  footer:{
+    position: 'relative',
+    marginTop: 400,
   },
 }));
 
@@ -90,12 +95,13 @@ const Blog = () => {
 
   return (
     <div className={classes.root}>
-      <Header></Header>
-      <CssBaseline />
-      <Container maxWidth="lg">
-        <Grid container spacing={1}>
-          <Grid item xs={12}>
-            <Toolbar className={classes.toolbar}>
+      <div>
+        <Header></Header>
+        <CssBaseline />
+        <Container maxWidth="lg">
+          <Grid container spacing={1}>
+            <Grid item xs={12}>
+              <Toolbar className={classes.toolbar}>
                 <Typography
                   component="h2"
                   variant="h2"
@@ -106,25 +112,33 @@ const Blog = () => {
                 >
                   LoGo
                 </Typography>
-            </Toolbar>
+              </Toolbar>
+            </Grid>
+
+            <Grid item xs={4}>
+              <Button
+                href={"/jobIndex"}
+                size="large"
+                className={classes.button}
+              >
+                Sök Jobb
+              </Button>
+            </Grid>
+            <Grid item xs={4}>
+              <Button size="large" className={classes.button}>
+                Hitta Personal- Ej implementerad
+              </Button>
+            </Grid>
+            <Grid item xs={4}>
+              <Button href={"/signIn"} size="large" className={classes.button}>
+                Annons Exempel
+              </Button>
+            </Grid>
           </Grid>
-          <Grid item xs={2}></Grid>
-          <Grid item xs={3}>
-            <Button size="large" className={classes.button}>
-              Sök Jobb
-            </Button>
-          </Grid>
-          <Grid item xs={3}>
-            <Button size="large" className={classes.button}>
-              Hitta Personal
-            </Button>
-          </Grid>
-          <Grid item xs={3}></Grid>
-        </Grid>
-        <main>
-          {/* Main featured post */}
+          
+            {/* Main featured post
           <Paper className={classes.mainFeaturedPost}>
-            {/* Increase the priority of the hero background image */}
+            { Increase the priority of the hero background image 
             {
               <img
                 style={{ display: "none" }}
@@ -155,10 +169,10 @@ const Blog = () => {
                 </div>
               </Grid>
             </Grid>
-          </Paper>
-          {/* End main featured post */}
-          {/* Sub featured posts */}
-          <Grid container spacing={4}>
+          </Paper> */}
+            {/* End main featured post */}
+            {/* Sub featured posts */}
+            {/* <Grid container spacing={4}>
             {featuredPosts.map((post) => (
               <Grid item key={post.title} xs={12} md={6}>
                 <CardActionArea component="a" href="#">
@@ -190,10 +204,14 @@ const Blog = () => {
                 </CardActionArea>
               </Grid>
             ))}
-          </Grid>
-          {/* End sub featured posts */}
-        </main>
-      </Container>
+          </Grid> */}
+            {/* End sub featured posts */}
+        
+        </Container>
+      </div>
+      <div className={classes.footer}>
+        <Footer />
+      </div>
     </div>
   );
 };

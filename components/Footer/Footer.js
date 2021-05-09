@@ -13,26 +13,37 @@ const useStyles = makeStyles((theme) => ({
     bottom: 0,
     marginTop: 50,
   },
-  toolbarr: {
-    borderStyle: "solid",
-    borderWidth: 2,
-    borderColor: "green",
+  copyright:{
+    marginTop: 50,
+    position: 'relative',
   },
+  grid:{
+      position: 'relative',
+      top: 40,
+  }
 }));
 
-export default function ProminentAppBar() {
+export default function Footer() {
   const classes = useStyles();
 
   return (
     <div className={classes.footer}>
-      <Grid container direction="row" className={classes.toolbarr}>
-        <Grid item xs={6}>
-          <Typography>Grid 1 Item 1</Typography>
+      <div className={classes.grid}>
+        <Grid
+          container
+          direction="column"
+          justify="flex-start"
+          alignItems="center"
+          className={classes.copyright}
+        >
+          <Grid item xs={6}>
+            <Typography>Copyright © LoGo 2021.</Typography>
+          </Grid>
+          <Grid item xs={6}>
+            <Typography>Said Mohammed</Typography>
+          </Grid>
         </Grid>
-        <Grid item xs={6}>
-          <Typography>Grid 1 Item 2</Typography>
-        </Grid>
-      </Grid>
+      </div>
     </div>
   );
 }
