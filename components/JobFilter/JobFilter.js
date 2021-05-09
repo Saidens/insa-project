@@ -56,8 +56,8 @@ const JobFilter = (props) => {
 
   //Renderar de olika listorna baserad på data from listData.js
   const categoryContent = list.map((list) => (
-    <div>
-      <ListItem button className={classes.button}>
+    <div key={list.id}>
+      <ListItem button className={classes.button} >
         <ListItemIcon>
           <ChevronRightIcon />
         </ListItemIcon>
