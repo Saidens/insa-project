@@ -7,6 +7,7 @@ import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
+import { Link } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "inherit",
     height: "100%",
     width: "100%",
-    backgroundColor: "#b1dfe6",
+    backgroundColor: "#DDF4F8",
     borderLeftStyle: "solid",
     borderLeftWidth: "5px",
     borderLeftColor: "#28a2b5",
@@ -47,7 +48,8 @@ const PostCard = (props) => {
 
   return (
     <div className={classes.root}>
-      <ListItem alignItems="flex-start" button={true}>
+      <Link href={"/signIn"} variant='inherit' color='inherit' underline='none'>
+      <ListItem alignItems="flex-start" button={true} >
         <ListItemAvatar>
           <Avatar className={classes.cardAvatar} alt="Said Mohammed" />
         </ListItemAvatar>
@@ -56,7 +58,7 @@ const PostCard = (props) => {
           primary={
             <React.Fragment>
               <Typography component="span" variant="h4" gutterBottom={true}>
-                Java Utvecklare
+              6 newly graduated economists to one of the worlds biggest fintech company
               </Typography>
             </React.Fragment>
           }
@@ -68,13 +70,7 @@ const PostCard = (props) => {
                 color="textPrimary"
                 className={classes.cardFont}
               >
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia, looked up
-                one of the more obscure Latin words, consectetur, from a Lorem
-                Ipsum passage, and going through the cites of the word in
-                classical literature, discovered the undoubtable source.
+                As a stakeholder mapping representative you will be laying the foundation for our clients most important deals and partnerships. This is a crucially important role to our clients company and you will therefore work closely with, and present your findings to the senior commercial teams. Do you want to get your foot in the door at a global fintech company? Send in your application today!
               </Typography>
             </React.Fragment>
           }
@@ -87,6 +83,7 @@ const PostCard = (props) => {
       <div className={classes.divider}>
         <Divider variant="fullWidth"></Divider>
       </div>
+      </Link>
     </div>
   );
 };
