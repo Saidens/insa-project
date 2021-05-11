@@ -7,7 +7,7 @@ city: 'Malmö'
 scope: 'Heltid, 8-17'
 type: 'Rekrytering'
 category: 'Helpdesk First Line Support'
-starDate: 'Omgående'
+startDate: 'Omgående'
 subHeader: 'Du som vill arbeta i ett litet team av teknikfantaster och har en fenomenal servicekänsla, look no further. Det går bra för Midsona och tillväxttakten är snabb, därför behöver nu även deras IT-team utökas. Har du erfarenhet av service desk samt ett stort intresse för IT - Ansök nedan!'
 aboutPosition: 'I dockan i Malmö, precis vid vattnet, hittar vi ett av Nordens ledande företag inom hälsa och välbefinnande. I lokaler med fönster som väggar är det ingen brist på D-vitamin under vinterhalvåret, men om du mot förmodan skulle behöva ett vitamintillskott är detta trots allt Midsonas hemmaplan.
 IT-teamet består idag av 8 personer och eftersom Midsona går som tåget så letar de nu efter en ytterligare kollega. Med varje förvärv Midsona gör växer också IT-teamets ansvarsområde och projekt de är delaktiga i. Ni sitter jämte varandra i teamet och om du gillar teknik i alla dess former har du hamnat rätt, här är alltifrån datorspel, bilar och ny teknik stora intressen nämligen!
